@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         //Ejemplo hola mundo
-        String mensaje = "Hola Mundo en Javalin :-D";
+        String mensaje = "Me cayo' la noche, la noche oscura, trago de aguardiente pa' la noche oscura. [Cantamarta - Lluvia]";
         System.out.println(mensaje);
 
         //Creando la instancia del servidor.
@@ -21,7 +21,7 @@ public class Main {
         // Javalin app = Javalin.create().start(7000);
 
         //creando el manejador
-        app.get("/", ctx -> ctx.result("Hola Mundo en Javalin :-D"));
+        app.get("/", ctx -> ctx.result("Me cayo' la noche, la noche oscura, trago de aguardiente pa' la noche oscura. [Cantamarta - Lluvia]"));
 
         //aplicando los diferentes conceptos.
         new ConceptoBasicosControlador(app).aplicarRutas();
